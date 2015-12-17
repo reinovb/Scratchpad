@@ -1,0 +1,53 @@
+﻿@using Questions
+@{
+    ViewBag.Title = "Question 4";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@Question4.Title</h3>
+
+<p>
+    Using the supplied CDCatalog.xml file, read through the xml file and produce the following output and statistics:<br />
+    <ul>
+        <li>A sorted list of the unique countries, together with:</li>
+        <li>The count of CDs per country</li>
+        <li>The average price of a CD per country</li>
+        <li>The latest CD release (year) per country</li>
+    </ul>
+    <br/>
+    You might also want to modify the return signature of the Question4 method to pass the results back to the view.
+</p>
+<br />
+
+<div>
+    <button id="ShowCountries" value="Show Countries" class="btn btn-default">Show Countries</button>
+</div>
+
+<div id="Answer4">
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+<script type="text/javascript" language="javascript">
+    window.applicationBaseUrl = @Html.Raw(HttpUtility.JavaScriptStringEncode(new Uri(new Uri(this.Context.Request.Url.GetLeftPart(UriPartial.Authority)), Url.Content("~/")).ToString(), true));
+    var baseURL = window.applicationBaseUrl;
+
+    $(document).ready(function () {
+        $("#ShowCountries").click(function () {
+
+            var answerDiv = $("#Answer4");
+
+            $.ajax({
+                cache: false,
+                type: "POST",
+                url: baseURL + "Questions/Answer4",
+                success: function (data) {
+                    answerDiv.html('');
+                    answerDiv.html(data);
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status);
+                    alert(thrownError);
+                }
+            });
+        });
+    });
+</script>

@@ -1,0 +1,49 @@
+﻿@using Questions
+@{
+    ViewBag.Title = "Question 2";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@Question2.Title</h3>
+
+<p>For every block of 3 characters in a given string, swop the first and last character and produce an output string<br/><br />
+    <b>Example 1:</b> "abcdef123" should become "cbafed321"<br />
+    <b>Example 2:</b> "Qorus1" should become "roQ1su"<br />
+<br />
+
+<div style="margin-bottom:6px">
+    <label class="control-label" style="padding: 6px 12px 0 0; float: left; width: 12%">Input Value</label>
+    <input id="InputValue" type="text" style="float: left" placeholder="Enter a string value" class="form-control" />
+    <button id="save" value="Show Answer" class="btn btn-default" style="margin-left: 12px">Show Answer</button>
+</div>
+
+<div id="Answer2">
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+<script type="text/javascript" language="javascript">
+    window.applicationBaseUrl = @Html.Raw(HttpUtility.JavaScriptStringEncode(new Uri(new Uri(this.Context.Request.Url.GetLeftPart(UriPartial.Authority)), Url.Content("~/")).ToString(), true));
+    var baseURL = window.applicationBaseUrl;
+
+    $(document).ready(function () {
+        $("#save").click(function () {
+
+            var txtVal = $("#InputValue").val();
+
+            var answerDiv = $("#Answer2");
+            $.ajax({
+                cache: false,
+                type: "POST",
+                url: baseURL + "Questions/Answer2",
+                data: { "InputValue": txtVal },
+                success: function (data) {
+                    answerDiv.html('');
+                    answerDiv.html(data);
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status);
+                    alert(thrownError);
+                }
+            });
+        });
+    });
+</script>

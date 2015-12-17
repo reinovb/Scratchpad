@@ -1,0 +1,7 @@
+C:\TFS\Qorus\QorusDeveloperTest2013\Question1Test\bin\Debug\Question1Test.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\Question1Test\bin\Debug\Question1Test.pdb
+C:\TFS\Qorus\QorusDeveloperTest2013\Question1Test\bin\Debug\Question1.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\Question1Test\bin\Debug\Question1.pdb
+C:\TFS\Qorus\QorusDeveloperTest2013\Question1Test\obj\Debug\QuestionsTests.csprojResolveAssemblyReference.cache
+C:\TFS\Qorus\QorusDeveloperTest2013\Question1Test\obj\Debug\Question1Test.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\Question1Test\obj\Debug\Question1Test.pdb

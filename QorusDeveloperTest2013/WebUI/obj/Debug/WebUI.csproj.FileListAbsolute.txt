@@ -1,0 +1,56 @@
+C:\Dev\TechTest\WebUI\bin\Qorus Developer Test.dll.config
+C:\Dev\TechTest\WebUI\bin\Qorus Developer Test.dll
+C:\Dev\TechTest\WebUI\bin\Qorus Developer Test.pdb
+C:\Dev\TechTest\WebUI\bin\Antlr3.Runtime.dll
+C:\Dev\TechTest\WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\Dev\TechTest\WebUI\bin\Newtonsoft.Json.dll
+C:\Dev\TechTest\WebUI\bin\Question1.dll
+C:\Dev\TechTest\WebUI\bin\System.Web.Helpers.dll
+C:\Dev\TechTest\WebUI\bin\System.Web.Mvc.dll
+C:\Dev\TechTest\WebUI\bin\System.Web.Optimization.dll
+C:\Dev\TechTest\WebUI\bin\System.Web.Razor.dll
+C:\Dev\TechTest\WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\Dev\TechTest\WebUI\bin\System.Web.WebPages.dll
+C:\Dev\TechTest\WebUI\bin\System.Web.WebPages.Razor.dll
+C:\Dev\TechTest\WebUI\bin\WebGrease.dll
+C:\Dev\TechTest\WebUI\bin\Question1.pdb
+C:\Dev\TechTest\WebUI\bin\System.Web.Helpers.xml
+C:\Dev\TechTest\WebUI\bin\System.Web.Mvc.xml
+C:\Dev\TechTest\WebUI\bin\System.Web.Optimization.xml
+C:\Dev\TechTest\WebUI\bin\System.Web.Razor.xml
+C:\Dev\TechTest\WebUI\bin\System.Web.WebPages.xml
+C:\Dev\TechTest\WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\Dev\TechTest\WebUI\bin\System.Web.WebPages.Razor.xml
+C:\Dev\TechTest\WebUI\bin\Antlr3.Runtime.pdb
+C:\Dev\TechTest\WebUI\bin\Newtonsoft.Json.xml
+C:\Dev\TechTest\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
+C:\Dev\TechTest\WebUI\obj\Debug\Qorus Developer Test.dll
+C:\Dev\TechTest\WebUI\obj\Debug\Qorus Developer Test.pdb
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\Qorus Developer Test.dll.config
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\Qorus Developer Test.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\Qorus Developer Test.pdb
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\Antlr3.Runtime.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\Microsoft.Web.Infrastructure.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\Newtonsoft.Json.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\Question1.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.Helpers.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.Mvc.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.Optimization.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.Razor.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.WebPages.Deployment.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.WebPages.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.WebPages.Razor.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\WebGrease.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\Question1.pdb
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.Helpers.xml
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.Mvc.xml
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.Optimization.xml
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.Razor.xml
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.WebPages.xml
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.WebPages.Deployment.xml
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\System.Web.WebPages.Razor.xml
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\Antlr3.Runtime.pdb
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\bin\Newtonsoft.Json.xml
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\obj\Debug\WebUI.csprojResolveAssemblyReference.cache
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\obj\Debug\Qorus Developer Test.dll
+C:\TFS\Qorus\QorusDeveloperTest2013\WebUI\obj\Debug\Qorus Developer Test.pdb

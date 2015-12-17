@@ -1,0 +1,50 @@
+﻿@using Questions
+@{
+    ViewBag.Title = "Question 5";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@Question5.Title</h3>
+
+<p>
+    Display (in a grid or tabular format) a list of the CDs from the CDCatalog.xml file showing 
+    the Artist, Title and Price.  Add some simple search functionality and a popup dialog that
+    shows some extra information when clicking on a CD item.  The extra information can be the
+    Country, Company and Year<br />
+    <br/>
+    <small>We have provided a framework to work within, but you are welcome to modify the framework to suit your needs</small>
+</p>
+<br />
+
+<div>
+    <button id="ShowData" value="ShowData" class="btn btn-default">Show CDs</button>
+</div>
+
+<div id="Answer5">
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+<script type="text/javascript" language="javascript">
+    window.applicationBaseUrl = @Html.Raw(HttpUtility.JavaScriptStringEncode(new Uri(new Uri(this.Context.Request.Url.GetLeftPart(UriPartial.Authority)), Url.Content("~/")).ToString(), true));
+    var baseURL = window.applicationBaseUrl;
+
+    $(document).ready(function () {
+        $("#ShowData").click(function () {
+
+            var answerDiv = $("#Answer5");
+
+            $.ajax({
+                cache: false,
+                type: "POST",
+                url: baseURL + "Questions/Answer5",
+                success: function (data) {
+                    answerDiv.html('');
+                    answerDiv.html(data);
+                },
+                error: function (xhr, ajaxOptions, thrownError) {
+                    alert(xhr.status);
+                    alert(thrownError);
+                }
+            });
+        });
+    });
+</script>

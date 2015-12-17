@@ -1,0 +1,92 @@
+﻿@using Questions
+@{
+    ViewBag.Title = "Question 3";
+}
+<h2>@ViewBag.Title</h2>
+<h3>@Question3.Title</h3>
+
+<p>
+    A developer has created a simple application with which to calculate the montly payments on a loan. <br /><br />
+    Sadly, there are some bugs in the code and the developer has left. Examine the code provided with Question 3 to fix it and make it bug-proof.<br /><br />
+    
+    You may use the sample input and output data below to determine if the calculator is functioning correctly.<br /><br />
+    <b>Example 1:</b> Period (Months): 60, Interest Rate: 6, Purchase Price: 50 000, Down Payment: 10 000, Expected Output: 773.31<br />
+    <b>Example 2:</b> Period (Months): 120, Interest Rate: 9, Purchase Price: 75 000, Down Payment: 5 000, Expected Output: 886.73 <br /><br />
+
+</p>
+<br />
+
+<div style="margin-bottom:6px">
+    
+    <div>
+        <label class="control-label" style="padding: 6px 12px 0 0; float: left; width: 15%">Period (Months)</label>
+        <input id="Period" type="text" style="float: left" placeholder="Period (Months)" class="form-control" value="0" />
+    </div>
+    <div style="clear:left; padding-top:10px"></div>
+    <div>
+        <label class="control-label" style="padding: 6px 12px 0 0; float: left; width: 15%">Interest Rate</label>
+        <input id="Rate" type="text" style="float: left" placeholder="Interest Rate" class="form-control" value="0" />
+    </div>
+    <div style="clear:left; padding-top:10px"></div>
+    <div>
+        <label class="control-label" style="padding: 6px 12px 0 0; float: left; width: 15%">Purchase Price</label>
+        <input id="Price" type="text" style="float: left" placeholder="Purchase Price" class="form-control" value="0" />
+    </div>
+    <div style="clear:left; padding-top:10px"></div>
+    <div>
+        <label class="control-label" style="padding: 6px 12px 0 0; float: left; width: 15%">Down Payment</label>
+        <input id="DownPayment" type="text" style="float: left" placeholder="Down Payment" class="form-control" value="0" />
+    </div>
+    <div style="clear:left; padding-top:10px"></div>
+    <br/><br/>
+    <button id="save" value="Show Answer" class="btn btn-default" >Show Answer</button>
+</div>
+
+<div id="Answer3">
+</div>
+
+@Scripts.Render("~/bundles/jquery")
+<script type="text/javascript" language="javascript">
+    window.applicationBaseUrl = @Html.Raw(HttpUtility.JavaScriptStringEncode(new Uri(new Uri(this.Context.Request.Url.GetLeftPart(UriPartial.Authority)), Url.Content("~/")).ToString(), true));
+    var baseURL = window.applicationBaseUrl;
+
+    $(document).ready(function () {
+
+        $("#save").click(function () {
+
+            var validInput = true;
+            $("input").each(function( index ) {
+                if($.isNumeric($(this).val()) == false)
+                {
+                    alert('Please supply a valid numeric value for each field.');
+                    validInput = false;
+                    return false;
+                }
+            });
+
+            if (validInput) {
+                var period = $("#Period").val();
+                if (period )
+                var rate = $("#Rate").val();
+                var price = $("#Price").val();
+                var downPayment = $("#DownPayment").val();
+
+                var answerDiv = $("#Answer3");
+                $.ajax({
+                    cache: false,
+                    type: "POST",
+                    url: baseURL + "Questions/Answer3",
+                    data: { "months": period, "interestRate": rate, "purchasePrice": price, "downPayment": downPayment  },
+                    success: function (data) {
+                        answerDiv.html('');
+                        answerDiv.html(data);
+                    },
+                    error: function (xhr, ajaxOptions, thrownError) {
+                        alert(xhr.status);
+                        alert(thrownError);
+                    }
+                });
+            }
+        });
+    });
+</script>
